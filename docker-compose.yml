@@ -1,0 +1,16 @@
+version: '3.9'
+networks:
+    twitterdata:
+services:
+
+  danireact:
+    image: danirecatapp:latest
+    restart: always
+
+    ports:
+      - 3029:3000
+   
+  
+
+
+ 
