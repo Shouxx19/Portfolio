@@ -4,6 +4,7 @@ import logo from '../assets/img/logo2.png';
 import Facebook from '../assets/img/facebook.svg';
 import LinkedIn from '../assets/img/linkedin.svg';
 import Instagram from '../assets/img/instagram.svg';
+import GitHub from '../assets/img/github2.svg';
 
 
 export const CustomNavbar = () => {
@@ -41,17 +42,27 @@ export const CustomNavbar = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')} >Skills</Nav.Link>
-                    <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')} >Projects</Nav.Link>
-            </Nav>
-            <span className="navbar-text">
-                <div className="social-icon">
-                    <a href='#'><img src={Facebook} alt='' /></a>
-                    <a href='#'><img src={LinkedIn} alt='' /></a>
-                    <a href='#'><img src={Instagram} alt='' /></a>
-                </div>
-                <button className="vvd" onClick={() => console.log("connect")}><span>Let's connect</span></button>
-            </span>
-        </Navbar.Collapse>
+                        <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')} >Projects</Nav.Link>
+                    </Nav>
+                    <span className="navbar-text">
+                        <div className="social-icon">
+                            <a href='https://www.facebook.com/daniel19.agoston/' target="_blank" rel="noreferrer">
+                                <img src={Facebook} alt='Facebook' />
+                            </a>
+                            <a href='https://www.linkedin.com/in/daniel-agoston-5500b02a9' target="_blank" rel="noreferrer">
+                                <img src={LinkedIn} alt='LinkedIn' />
+                            </a>
+                            <a href='https://www.instagram.com/leinad.a' target="_blank" rel="noreferrer">
+                                <img src={Instagram} alt='Instagram' />
+                            </a>
+                            <a href='https://github.com/Shouxx19' target="_blank" rel="noreferrer">
+                                <img src={GitHub} alt='GitHub' />
+                            </a>
+
+                        </div>
+                        <button className="vvd" onClick={() => window.location.href = "mailto:agostondaniel18@gmail.com"} rel="noopener noreferrer"><span>Let's connect</span></button>
+                    </span>
+                </Navbar.Collapse>
             </Container >
         </Navbar >
     );
