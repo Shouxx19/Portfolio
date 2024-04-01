@@ -5,7 +5,6 @@ import HtmlLogo from "../assets/img/html2.svg";
 import CssLogo from "../assets/img/css.svg";
 import JsLogo from "../assets/img/javascript.svg";
 import BootstrapLogo from "../assets/img/bootstrap.svg";
-import Mintbg from "../assets/img/downbg.png";
 
 import "react-multi-carousel/lib/styles.css";
 
@@ -31,16 +30,15 @@ export const Skills = () => {
 
   return (
     <section className="skills" id="skills">
-      <div className="bg-image">
-        <img src={Mintbg} alt="Background" />
+      <div className="bgskills">
       </div>
       <Container>
         <Row>
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>Junior Frontendesként szeretem a kihívásokat, és szeretnék fejlődni, új nyelveket megtanulni, természetesen a jelenlegi tudásomat csiszolni.</p>
-              <p className="motto">"Nincs olyan probléma, amire ne lenne megoldás".</p>
+              <p>As an aspiring developer, I relish challenges and aim to enhance my skills. I am keen on acquiring new languages and honing my existing expertise.</p>
+              <p className="motto">"In my opinion, problems are opportunities to create solutions.".</p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
                   <img src={HtmlLogo} alt="HTML" />
