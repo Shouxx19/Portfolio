@@ -15,17 +15,17 @@ function App() {
       <CustomNavbar />
       <Container>
         <Row>
-          <Col xs={7} md={8} xl={7}>
+          <Col xs={7} md={7} xl={7}>
             <Banner />
           </Col>
         </Row>
         <Row>
-          <Col xs={7} md={8} xl={7}>
+          <Col xs={7} md={7} xl={7}>
             <Skills />
           </Col>
         </Row>
         <Row>
-          <Col xs={7} md={8} xl={7}>
+          <Col xs={7} md={7} xl={7}>
             <Projects />
           </Col>
         </Row>

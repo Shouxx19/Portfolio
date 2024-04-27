@@ -1,14 +1,14 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import Card from './Card';
+
 
 export const Projects = () => {
-
-
 
     return (
         <section className="project" id="projects">
             <Container>
-                <Row>
-                    <Col>
+                <Row >
+                    <Col >
                         <div>
                             <h2>Projects</h2>
                             <p>The website is my first project, and this section will feature my future activities.</p>
@@ -26,14 +26,17 @@ export const Projects = () => {
                                 </Nav>
                                 <Tab.Content id="slideInUp">
                                     <Tab.Pane eventKey="first">
-                                        <Row>
+                                        <Row >
+                                            <Col>
+                                                <Card />
+                                            </Col>
                                         </Row>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
-                                        {/* Add content for the second tab here */}
+
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="third">
-                                        {/* Add content for the third tab here */}
+
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Tab.Container>
